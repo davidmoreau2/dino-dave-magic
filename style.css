@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --chocolate: #4c212a;
+  --oxford: #01172f;
+  --caribbean: #00635d;
+  --moonstone: #08a4bd;
+  --neon: #446df6;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: var(--neon);
+}
+
+/* navbar */
+
+.navbar {
+  width: 100%;
+  height: 150px;
+  background-color: var(--moonstone);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.navbar-main .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  color: var(--oxford);
+}
+
+.navbar-main .logo h1 {
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.navbar-main .logo p {
+  margin-top: 0;
+}
+
+.navbar-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--moonstone);
+  width: 1000px;
+  height: 100px;
+  top: 0;
+  margin: auto;
+}
+
+.navbar-main ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-main ul li {
+  margin-right: 15px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.navbar-main ul li a {
+  color: var(--oxford);
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Main */
+
+.main {
+  max-width: 100px;
+  margin: 150px auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.hero p {
+  width: 500px;
+  height: 50%;
+  padding: 25px;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--oxford);
+}
+
+.hero img {
+  width: 500px;
+}
+
+/* boxes */
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(1, 4r);
+  width: 1000px;
+  grid-gap: 10px;
+  margin-top: 25px;
+}
+
+.box {
+  grid-row: 1 / 2;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: var(--moonstone);
+  background-color: var(--caribbean);
+}
+
+/* about page */
+
+.about {
+  max-width: 1000px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutbox {
+  display: flex;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.aboutbox img {
+  width: 100%;
+}
+
+.aboutbox p {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 15px;
+  background-color: var(--caribbean);
+  color: var(--moonstone);
+  font-size: 1.25rem;
+}
+
+.box2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1;
+}
+
+.box2 img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.box2 p {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.box1,
+.box3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1;
+}
+
+.box1 p,
+.box3 p {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.box1 img,
+.box3 img {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+/* book form */
+
+.booking {
+  display: flex;
+  margin-top: 150px;
+  max-width: 1000px;
+  border: 3px solid var(--neon);
+  border-radius: 15px;
+  background-color: var(--caribbean);
+}
+
+.info {
+  padding: 25px;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  width: 50%;
+}
+
+.form {
+  border-left: 3px solid var(--caribbean);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+
+.form input {
+  margin-bottom: 15px;
+}
+
+.form textarea {
+  margin-bottom: 15px;
+}
+
+.submit {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: var(--oxford);
+  color: var(--neon);
+}
+
+.submit:active {
+  transform: scale(0.98);
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--moonstone);
+  color: #01172f;
+  text-align: center;
+}
+
+.mainfoot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
